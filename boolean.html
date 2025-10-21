@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objeto Boolean en JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Objeto Boolean en JavaScript</h1>
+    <p>Descubre cómo funcionan los valores lógicos <b>true</b> y <b>false</b></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Qué es un Boolean?</h2>
+      <p>
+        El objeto <b>Boolean</b> representa un valor lógico que puede ser
+        <b>true</b> (verdadero) o <b>false</b> (falso).  
+        Se utiliza en condiciones para tomar decisiones en un programa.
+      </p>
+
+      <div class="codigo">
+        <pre>
+
+        </pre>
+      </div>
+    </section>
+
+    
+
+        </pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ejemplo práctico</h2>
+      <p>Ingresa tu edad para comprobar si puedes votar:</p>
+      <input type="number" id="edad" placeholder="Escribe tu edad">
+      <button id="btnVerificar">Verificar</button>
+      <p id="resultado"></p>
+
+      <div class="codigo">
+        <pre>
+
+   
+        </pre>
+      </div>
+    </section>
+
+   
+      <div class="codigo">
+        <pre>
+
+        </pre>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Código funcional
+    document.getElementById("btnVerificar").addEventListener("click", function() {
+      let edad = document.getElementById("edad").value;
+      let puedeVotar = Boolean(edad >= 18);
+      document.getElementById("resultado").innerHTML =
+        "¿Puede votar? " + puedeVotar +
+        "<br>Tipo de dato: " + typeof puedeVotar;
+    });
+  </script>
+
+</body>
+</html>
+
